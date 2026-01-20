@@ -137,10 +137,8 @@ export function NavBar({ items, className, currentLocale = 'tr' }: NavBarProps) 
                 className="absolute right-0 top-10 bg-white/90 dark:bg-background/5 border border-gray-300 dark:border-white/40 backdrop-blur-lg rounded-full shadow-2xl overflow-hidden z-50"
               >
               <div className="py-1 px-1">
-                {languages.map((lang, index) => {
+                {languages.map((lang) => {
                   const isActive = lang.code === currentLocale
-                  const isFirst = index === 0
-                  const isLast = index === languages.length - 1
 
                   return (
                     <Link

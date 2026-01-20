@@ -1,6 +1,5 @@
 import { Target, Lightbulb, Users, TrendingUp, CheckCircle, Layers } from 'lucide-react'
 import { setRequestLocale, getTranslations } from 'next-intl/server'
-import { teamData } from '@/data/team'
 import { investmentStages } from '@/data/investmentFocus'
 import PortfolioGallery from '@/components/about/PortfolioGallery'
 import HistoryTimeline from '@/components/about/HistoryTimeline'

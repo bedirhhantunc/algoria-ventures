@@ -7,18 +7,10 @@ import { Starfield } from '@/components/ui/starfield-1'
 export default function StarfieldBackground() {
   const { resolvedTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
-  const [key, setKey] = useState(0)
 
   useEffect(() => {
     setMounted(true)
   }, [])
-
-  // Force re-render when theme changes
-  useEffect(() => {
-    if (mounted) {
-      setKey(prev => prev + 1)
-    }
-  }, [resolvedTheme, mounted])
 
   if (!mounted) {
     // Render dark mode by default during SSR
