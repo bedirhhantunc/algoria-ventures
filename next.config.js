@@ -9,7 +9,7 @@ const nextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
-  basePath: '',
+  basePath: '/algoria-ventures',
 }
 
 module.exports = withNextIntl(nextConfig)
