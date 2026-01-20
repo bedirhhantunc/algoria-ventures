@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import Link from "next/link"
-import { usePathname, useRouter } from "next/navigation"
+import { usePathname } from "next/navigation"
 import { LucideIcon, Globe } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { ThemeToggle } from "@/components/ui/theme-toggle"
@@ -29,7 +29,6 @@ const languages = [
 
 export function NavBar({ items, className, currentLocale = 'tr' }: NavBarProps) {
   const pathname = usePathname()
-  const router = useRouter()
   const [activeTab, setActiveTab] = useState(items[0].name)
   const [isLangOpen, setIsLangOpen] = useState(false)
   const [currentHash, setCurrentHash] = useState('')
@@ -50,15 +49,12 @@ export function NavBar({ items, className, currentLocale = 'tr' }: NavBarProps) 
 
   // Update active tab based on current path (including hash)
   useEffect(() => {
-    const fullPath = pathname + currentHash
-
     const currentItem = items.find(item => {
       // Check if paths match (ignoring hash)
-      const pathWithoutHash = pathname
       const itemPathWithoutHash = item.url.split('#')[0]
 
-      return pathWithoutHash === itemPathWithoutHash ||
-             (pathWithoutHash === `/${currentLocale}` && item.url.endsWith(`/${currentLocale}`))
+      return pathname === itemPathWithoutHash ||
+             (pathname === `/${currentLocale}` && item.url.endsWith(`/${currentLocale}`))
     })
 
     if (currentItem) {
