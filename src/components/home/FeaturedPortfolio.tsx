@@ -4,11 +4,13 @@ import { useTranslations } from 'next-intl'
 import { useParams } from 'next/navigation'
 import { portfolioData } from '@/data/portfolio'
 import { Gallery4, Gallery4Item } from '@/components/ui/gallery-4'
+import { getBasePath } from '@/lib/utils'
 
 export default function FeaturedPortfolio() {
   const t = useTranslations('home.portfolio')
   const params = useParams()
   const locale = params.locale as string
+  const basePath = getBasePath()
 
   const featuredCompanies = portfolioData.filter((company) => company.featured)
 
@@ -27,7 +29,7 @@ export default function FeaturedPortfolio() {
       description={t('subtitle')}
       items={galleryItems}
       viewAllText={t('viewAll')}
-      viewAllHref={`/${locale}/about#portfolio`}
+      viewAllHref={`${basePath}/${locale}/about#portfolio`}
     />
   )
 }

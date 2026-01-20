@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl'
 import { useParams } from 'next/navigation'
 import Link from 'next/link'
 import { Calendar, ArrowRight } from 'lucide-react'
+import { getBasePath } from '@/lib/utils'
 
 const dummyNews = [
   {
@@ -33,6 +34,7 @@ export default function LatestNews() {
   const t = useTranslations('home.news')
   const params = useParams()
   const locale = params.locale as string
+  const basePath = getBasePath()
 
   return (
     <section className="section-padding bg-transparent">
@@ -62,7 +64,7 @@ export default function LatestNews() {
                 {news.excerpt}
               </p>
               <Link
-                href={`/${locale}/news/${news.id}`}
+                href={`${basePath}/${locale}/news/${news.id}`}
                 className="text-gray-700 dark:text-accent hover:text-gray-900 dark:hover:text-accent-light font-medium inline-flex items-center gap-1"
               >
                 Devamını Oku
@@ -74,7 +76,7 @@ export default function LatestNews() {
 
         <div className="text-center">
           <Link
-            href={`/${locale}/blog#news`}
+            href={`${basePath}/${locale}/blog#news`}
             className="border-2 border-gray-900 dark:border-accent text-gray-900 dark:text-accent hover:bg-gray-900 dark:hover:bg-accent hover:text-white dark:hover:text-primary font-semibold py-3 px-6 rounded-lg transition-all duration-300 inline-flex items-center gap-2"
           >
             {t('viewAll')}

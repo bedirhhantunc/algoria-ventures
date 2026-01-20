@@ -5,11 +5,13 @@ import { useParams } from 'next/navigation'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { MagneticText } from '@/components/ui/morphing-cursor'
+import { getBasePath } from '@/lib/utils'
 
 export default function Hero() {
   const t = useTranslations('home.hero')
   const params = useParams()
   const locale = params.locale as string
+  const basePath = getBasePath()
 
   return (
     <section className="relative min-h-[80vh] flex items-center overflow-hidden bg-transparent">
@@ -32,14 +34,14 @@ export default function Hero() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href={`/${locale}/contact#pitch`}
+              href={`${basePath}/${locale}/contact#pitch`}
               className="btn-secondary inline-flex items-center justify-center gap-2 group"
             >
               {t('cta_founders')}
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
-              href={`/${locale}/about#criteria`}
+              href={`${basePath}/${locale}/about#criteria`}
               className="btn-outline bg-gray-100 dark:bg-white/10 border-gray-900 dark:border-white text-gray-900 dark:text-white hover:bg-gray-900 dark:hover:bg-white hover:text-white dark:hover:text-primary inline-flex items-center justify-center gap-2"
             >
               {t('cta_investors')}
