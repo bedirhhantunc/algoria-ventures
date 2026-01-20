@@ -34,10 +34,13 @@ export function NavBar({ items, className, currentLocale = 'tr' }: NavBarProps) 
 
   // Update active tab based on current path
   useEffect(() => {
+    // Remove hash from pathname for comparison
+    const pathWithoutHash = pathname.split('#')[0]
+
     const currentItem = items.find(item => {
-      const itemPath = item.url.split('/').slice(2).join('/')
-      const currentPath = pathname.split('/').slice(2).join('/')
-      return itemPath === currentPath || (currentPath === '' && item.url.endsWith(`/${currentLocale}`))
+      const itemPath = item.url.split('#')[0] // Also remove hash from item url
+      return pathWithoutHash === itemPath ||
+             (pathWithoutHash === `/${currentLocale}` && item.url.endsWith(`/${currentLocale}`))
     })
     if (currentItem) {
       setActiveTab(currentItem.name)
