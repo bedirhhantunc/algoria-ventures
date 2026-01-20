@@ -121,7 +121,7 @@ export function NavBar({ items, className, currentLocale = 'tr' }: NavBarProps) 
       </div>
 
       {/* Theme Toggle & Language Switcher - Fixed to Right */}
-      <div className="fixed bottom-0 sm:top-0 right-6 z-50 mb-6 sm:pt-6 pointer-events-none flex gap-3">
+      <div className="fixed top-6 right-6 z-50 pointer-events-none flex gap-2">
         <div className="pointer-events-auto">
           <ThemeToggle />
         </div>
