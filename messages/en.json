@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "team": "Team",
+    "portfolio": "Portfolio",
+    "criteria": "Investment Criteria",
+    "submit": "Submit Your Pitch",
+    "blog": "Blog",
+    "whitepapers": "Whitepapers",
+    "news": "News",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Investing in Technology Leaders Shaping the Future",
+      "subtitle": "Leading venture capital fund providing capital, mentorship and network to early-stage technology startups",
+      "cta_founders": "For Founders",
+      "cta_investors": "For Investors"
+    },
+    "investmentFocus": {
+      "title": "Our Investment Focus",
+      "subtitle": "Where and at what stages we invest"
+    },
+    "portfolio": {
+      "title": "Our Portfolio",
+      "subtitle": "Successful startups we've supported to date",
+      "viewAll": "View All"
+    },
+    "team": {
+      "title": "Our Team",
+      "subtitle": "Our experienced investors and industry experts",
+      "viewAll": "Meet the Team"
+    },
+    "news": {
+      "title": "Latest News",
+      "subtitle": "News from our portfolio companies and team",
+      "viewAll": "All News"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Since 2019, we have been investing in early-stage technology startups, strengthening the technology ecosystem in Turkey and the MENA region.",
+    "mission": "Our Mission",
+    "vision": "Our Vision",
+    "philosophy": "Investment Philosophy",
+    "approach": "Our Approach",
+    "history": "Our History",
+    "values": "Our Values"
+  },
+  "team": {
+    "title": "Our Team",
+    "subtitle": "Meet our experienced investors and industry experts"
+  },
+  "portfolio": {
+    "title": "Our Portfolio",
+    "subtitle": "Successful startups we've supported to date",
+    "filter": "Filter",
+    "sector": "Sector",
+    "status": "Status",
+    "all": "All",
+    "active": "Active",
+    "exit": "Exit"
+  },
+  "criteria": {
+    "title": "Investment Criteria",
+    "subtitle": "Learn which startups we invest in and whether we're the right fit for you",
+    "stages": "Investment Stages",
+    "sectors": "Focus Sectors",
+    "geographic": "Geographic Focus",
+    "qualities": "Qualities We Seek",
+    "process": "Investment Process",
+    "applyNow": "Apply Now"
+  },
+  "submit": {
+    "title": "Submit Your Pitch",
+    "subtitle": "Apply for investment for your early-stage startup",
+    "companyName": "Company Name",
+    "website": "Website",
+    "founderName": "Founder Name",
+    "email": "Email",
+    "phone": "Phone",
+    "sector": "Sector",
+    "stage": "Investment Stage",
+    "description": "Company Description",
+    "pitchDeck": "Pitch Deck (PDF)",
+    "submit": "Submit Application",
+    "success": "Application Received!",
+    "successMessage": "Thank you for your application. Our team will review your submission and get back to you shortly."
+  },
+  "blog": {
+    "title": "Blog & Insights",
+    "subtitle": "Industry analysis, founder tips and portfolio news"
+  },
+  "whitepapers": {
+    "title": "Whitepapers",
+    "subtitle": "Detailed market analysis, technical reports and industry guides"
+  },
+  "news": {
+    "title": "News",
+    "subtitle": "Latest news from our portfolio companies and team"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have questions? Get in touch, we're happy to help",
+    "info": "Contact Information",
+    "form": "Write to Us"
+  },
+  "footer": {
+    "description": "Leading venture capital fund investing in early-stage technology startups.",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "contact": "Contact",
+    "newsletter": "Subscribe to Newsletter",
+    "emailPlaceholder": "Your email address",
+    "subscribe": "Subscribe",
+    "subscribing": "Subscribing...",
+    "subscribed": "Subscribed! 🎉",
+    "subscribeFailed": "Failed. Try again.",
+    "copyright": "© 2024 Algoria Ventures. All rights reserved."
+  },
+  "common": {
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "submit": "Submit",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "name": "Name",
+    "message": "Your Message",
+    "send": "Send"
+  }
+}

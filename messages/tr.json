@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "team": "Ekip",
+    "portfolio": "Portföy",
+    "criteria": "Yatırım Kriterleri",
+    "submit": "Projeni Gönder",
+    "blog": "Blog",
+    "whitepapers": "Whitepaperlar",
+    "news": "Haberler",
+    "contact": "İletişim"
+  },
+  "home": {
+    "hero": {
+      "title": "Geleceği Şekillendiren Teknoloji Liderlerine Yatırım Yapıyoruz",
+      "subtitle": "Erken aşama teknoloji girişimlerine sermaye, mentorluk ve network sağlayan önde gelen venture capital fonu",
+      "cta_founders": "Girişimciler İçin",
+      "cta_investors": "Yatırımcılar İçin"
+    },
+    "investmentFocus": {
+      "title": "Yatırım Odağımız",
+      "subtitle": "Hangi alanlarda ve aşamalarda yatırım yapıyoruz"
+    },
+    "portfolio": {
+      "title": "Portföy Şirketlerimiz",
+      "subtitle": "Bugüne kadar destek verdiğimiz başarılı girişimler",
+      "viewAll": "Tümünü Gör"
+    },
+    "team": {
+      "title": "Ekibimiz",
+      "subtitle": "Deneyimli yatırımcılarımız ve sektör uzmanlarımız",
+      "viewAll": "Ekiple Tanışın"
+    },
+    "news": {
+      "title": "Son Haberler",
+      "subtitle": "Portföy şirketlerimizden ve ekibimizden haberler",
+      "viewAll": "Tüm Haberler"
+    }
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "subtitle": "2019 yılından bu yana erken aşama teknoloji girişimlerine yatırım yapıyor, Türkiye ve MENA bölgesinde teknoloji ekosistemini güçlendiriyoruz.",
+    "mission": "Misyonumuz",
+    "vision": "Vizyonumuz",
+    "philosophy": "Yatırım Felsefemiz",
+    "approach": "Yaklaşımımız",
+    "history": "Tarihçemiz",
+    "values": "Değerlerimiz"
+  },
+  "team": {
+    "title": "Ekibimiz",
+    "subtitle": "Deneyimli yatırımcılarımız ve sektör uzmanlarımızla tanışın"
+  },
+  "portfolio": {
+    "title": "Portföyümüz",
+    "subtitle": "Bugüne kadar destek verdiğimiz başarılı girişimler",
+    "filter": "Filtrele",
+    "sector": "Sektör",
+    "status": "Durum",
+    "all": "Tümü",
+    "active": "Aktif",
+    "exit": "Exit"
+  },
+  "criteria": {
+    "title": "Yatırım Kriterleri",
+    "subtitle": "Hangi girişimlere yatırım yapıyoruz ve sizin için doğru mu olup olmadığını öğrenin",
+    "stages": "Yatırım Aşamaları",
+    "sectors": "Odaklandığımız Sektörler",
+    "geographic": "Coğrafi Odak",
+    "qualities": "Aradığımız Nitelikler",
+    "process": "Yatırım Süreci",
+    "applyNow": "Hemen Başvur"
+  },
+  "submit": {
+    "title": "Projeni Gönder",
+    "subtitle": "Erken aşama girişiminiz için yatırım başvurusunda bulunun",
+    "companyName": "Şirket Adı",
+    "website": "Website",
+    "founderName": "Kurucu Adı Soyadı",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "sector": "Sektör",
+    "stage": "Yatırım Aşaması",
+    "description": "Şirket Açıklaması",
+    "pitchDeck": "Pitch Deck (PDF)",
+    "submit": "Başvuruyu Gönder",
+    "success": "Başvurunuz Alındı!",
+    "successMessage": "Başvurunuz için teşekkür ederiz. Ekibimiz en kısa sürede başvurunuzu değerlendirecek ve size dönüş yapacaktır."
+  },
+  "blog": {
+    "title": "Blog & Görüşler",
+    "subtitle": "Sektör analizleri, girişimci ipuçları ve portföy haberlerimiz"
+  },
+  "whitepapers": {
+    "title": "Whitepaperlar",
+    "subtitle": "Detaylı pazar analizleri, teknik raporlar ve sektör rehberleri"
+  },
+  "news": {
+    "title": "Haberler",
+    "subtitle": "Portföy şirketlerimizden ve ekibimizden son haberler"
+  },
+  "contact": {
+    "title": "İletişim",
+    "subtitle": "Sorularınız mı var? Bize ulaşın, memnuniyetle yardımcı olalım",
+    "info": "İletişim Bilgileri",
+    "form": "Bize Yazın"
+  },
+  "footer": {
+    "description": "Erken aşama teknoloji girişimlerine yatırım yapan önde gelen venture capital fonu.",
+    "quickLinks": "Hızlı Erişim",
+    "followUs": "Bizi Takip Edin",
+    "contact": "İletişim",
+    "newsletter": "Bülten Aboneliği",
+    "emailPlaceholder": "E-posta adresiniz",
+    "subscribe": "Abone Ol",
+    "subscribing": "Abone Olunuyor...",
+    "subscribed": "Abone oldunuz! 🎉",
+    "subscribeFailed": "Hata oluştu. Tekrar deneyin.",
+    "copyright": "© 2024 Algoria Ventures. Tüm hakları saklıdır."
+  },
+  "common": {
+    "readMore": "Devamını Oku",
+    "learnMore": "Daha Fazla Bilgi",
+    "submit": "Gönder",
+    "loading": "Yükleniyor...",
+    "error": "Bir hata oluştu",
+    "name": "Ad Soyad",
+    "message": "Mesajınız",
+    "send": "Gönder"
+  }
+}
