@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 import { LucideIcon, Globe } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { ThemeToggle } from "@/components/ui/theme-toggle"
@@ -29,23 +29,42 @@ const languages = [
 
 export function NavBar({ items, className, currentLocale = 'tr' }: NavBarProps) {
   const pathname = usePathname()
+  const router = useRouter()
   const [activeTab, setActiveTab] = useState(items[0].name)
   const [isLangOpen, setIsLangOpen] = useState(false)
+  const [currentHash, setCurrentHash] = useState('')
 
-  // Update active tab based on current path
+  // Listen to hash changes
   useEffect(() => {
-    // Remove hash from pathname for comparison
-    const pathWithoutHash = pathname.split('#')[0]
+    const handleHashChange = () => {
+      setCurrentHash(window.location.hash)
+    }
+
+    setCurrentHash(window.location.hash)
+    window.addEventListener('hashchange', handleHashChange)
+
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange)
+    }
+  }, [])
+
+  // Update active tab based on current path (including hash)
+  useEffect(() => {
+    const fullPath = pathname + currentHash
 
     const currentItem = items.find(item => {
-      const itemPath = item.url.split('#')[0] // Also remove hash from item url
-      return pathWithoutHash === itemPath ||
+      // Check if paths match (ignoring hash)
+      const pathWithoutHash = pathname
+      const itemPathWithoutHash = item.url.split('#')[0]
+
+      return pathWithoutHash === itemPathWithoutHash ||
              (pathWithoutHash === `/${currentLocale}` && item.url.endsWith(`/${currentLocale}`))
     })
+
     if (currentItem) {
       setActiveTab(currentItem.name)
     }
-  }, [pathname, items, currentLocale])
+  }, [pathname, currentHash, items, currentLocale])
 
   const switchLanguage = (newLocale: string) => {
     const newPathname = pathname.replace(`/${currentLocale}`, `/${newLocale}`)
