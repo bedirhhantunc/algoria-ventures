@@ -97,4 +97,16 @@ export const portfolioData: PortfolioCompany[] = [
     featured: false,
     image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
   },
+  {
+    id: '9',
+    name: 'NLCortex Sales',
+    logo: '/images/portfolio/nlcortex-sales.png',
+    description: 'AI destekli satış asistanı ve müşteri analizi platformu',
+    sector: 'Sales-Tech',
+    status: 'active',
+    year: 2024,
+    website: 'https://sales.nlcortex.com/',
+    featured: true,
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+  },
 ]
